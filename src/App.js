@@ -5,13 +5,15 @@ function App() {
   return (
     <div className="App">
       <h1>Hello World</h1>
-      <nav
-        style={{
-          borderBottom: "solid 1px",
-          paddingBottom: "1rem",
-        }}
-      >
-        <Link to="/someRoute">Some Route</Link>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/info">Info</Link>
+        <Link to="/rsvp">RSVP</Link>
+        <Link to="/travel">Travel</Link>
+        <Link to="/photos">Photos</Link>
+        <Link to="/registry">Registry</Link>
+        <Link to="/contact">Contact</Link>
+        <Link to="/admin">Admin</Link>
       </nav>
       <Outlet />
     </div>
