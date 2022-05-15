@@ -1,21 +1,24 @@
 import "./App.css";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import { Grid, Typography } from "@material-ui/core";
+import Nav from "./components/Nav";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/info">Info</Link>
-        <Link to="/rsvp">RSVP</Link>
-        <Link to="/travel">Travel</Link>
-        <Link to="/photos">Photos</Link>
-        <Link to="/registry">Registry</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/admin">Admin</Link>
-      </nav>
-      <Outlet />
+      <Grid container direction="column" justifyContent="flex-start" alignItems="flex-start">
+        <Grid item className="full-width-container">
+          <Nav />
+        </Grid>
+        <Grid item className="full-width-container">
+          <Outlet />
+        </Grid>
+        <Grid item className="full-width-container">
+          <Typography variant="body2" style={{ textAlign: "center" }}>
+            Copyright © {new Date().getFullYear()} Justin Girard
+          </Typography>
+        </Grid>
+      </Grid>
     </div>
   );
 }

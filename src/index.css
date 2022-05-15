@@ -2,4 +2,99 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Cormorant Garamond", serif;
+  padding: 20px;
+}
+
+.full-width-container {
+  width: 100%;
+}
+
+.mobile-nav-item {
+  text-decoration: none;
+  color: black;
+  font-size: 1.75em;
+}
+
+.nav-item {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+.nav-item .active {
+  text-decoration: underline;
+}
+
+.nav-item a {
+  text-decoration: none;
+}
+
+.fancy-font-title {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .fancy-font-title {
+    font-size: 14vw;
+  }
+  #mobile-nav {
+    display: block;
+  }
+  #desktop-nav {
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .fancy-font-title {
+    font-size: 12vw;
+  }
+  #mobile-nav {
+    display: block;
+  }
+  #desktop-nav {
+    display: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .fancy-font-title {
+    font-size: 10vw;
+  }
+  #mobile-nav {
+    display: none;
+  }
+  #desktop-nav {
+    display: block;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .fancy-font-title {
+    font-size: 8vw;
+  }
+  #mobile-nav {
+    display: none;
+  }
+  #desktop-nav {
+    display: block;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .fancy-font-title {
+    font-size: 6vw;
+  }
+  #mobile-nav {
+    display: none;
+  }
+  #desktop-nav {
+    display: block;
+  }
 }
