@@ -13,7 +13,7 @@ function App() {
         <Grid item className="full-width-container">
           <Outlet />
         </Grid>
-        <Grid item className="full-width-container">
+        <Grid item className="full-width-container" style={{ width: "100%", marginTop: "20px" }}>
           <Typography variant="body2" style={{ textAlign: "center" }}>
             Copyright © {new Date().getFullYear()} Justin Girard
           </Typography>

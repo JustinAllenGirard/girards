@@ -1,7 +1,35 @@
+import { Grid } from "@material-ui/core";
+import { Divider } from "@material-ui/core";
+
 export default function Home() {
   return (
     <main>
-      <h1 className="fancy-font-title">Justin & Angie</h1>
+      <Grid container direction="column" justifyContent="flex-start" alignItems="center">
+        <Grid item>
+          <img
+            src="title-background-top.png"
+            alt="top decor"
+            width="100%"
+            height="auto"
+            className="title-image"
+          />
+        </Grid>
+        <Grid item>
+          <h1 className="fancy-font-title">Justin & Angie</h1>
+        </Grid>
+        <Grid item>
+          <img
+            src="title-background-bottom.png"
+            alt="bottom decor"
+            width="100%"
+            height="auto"
+            className="title-image"
+          />
+        </Grid>
+        <Grid item style={{ width: "80%", marginTop: "20px" }}>
+          <p>Gucci Gang</p>
+        </Grid>
+      </Grid>
     </main>
   );
 }

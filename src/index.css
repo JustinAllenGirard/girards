@@ -32,6 +32,8 @@ body {
 .fancy-font-title {
   font-family: "Dancing Script", cursive;
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* Extra small devices (phones, 600px and down) */

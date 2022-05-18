@@ -23,7 +23,7 @@ export default function Nav() {
   };
 
   return (
-    <main>
+    <main style={{ marginBottom: "10px" }}>
       <div id="mobile-nav">
         <Grid container direction="row" justifyContent="flex-end" alignItems="flex-start">
           <Grid item>
