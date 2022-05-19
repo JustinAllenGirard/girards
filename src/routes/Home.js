@@ -1,5 +1,4 @@
 import { Grid } from "@material-ui/core";
-import { Divider } from "@material-ui/core";
 
 export default function Home() {
   return (
@@ -25,6 +24,9 @@ export default function Home() {
             height="auto"
             className="title-image"
           />
+        </Grid>
+        <Grid item>
+          <h2 className="title-date">13 July 2024</h2>
         </Grid>
         <Grid item style={{ width: "80%", marginTop: "20px" }}>
           <p>Gucci Gang</p>
